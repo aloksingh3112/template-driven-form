@@ -8,9 +8,7 @@ import { NgForm, NgModel } from '@angular/forms';
 })
 export class AppComponent {
   @ViewChild('f') formRef:NgForm;
-  // onSubmit(){
-  //   console.log(this.formRef);
-  // }
+
   petname:string='pet';
   submit:boolean = false;
 
@@ -24,15 +22,7 @@ export class AppComponent {
   }
   setData(){
     const name='gg';
-    // this.formRef.setValue({
-    //   userdata:{
-    //     username:name,
-    //     email:'gg@gmail.com'
-    //   },
-    //   secret:'pet',
-    //   gender:'male'
 
-    // })
     this.formRef.form.patchValue({
       userdata{
         username:name
